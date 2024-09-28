@@ -5,9 +5,9 @@ metadata:
   namespace: argocd
 spec:
   source:
+    repoURL: https://github.com/panduraju50/argocd-example-apps.git    # Git repository URL containing your code
     plugin:
       name: my-custom-plugin      # This is the custom plugin you defined
-    repoURL: https://github.com/panduraju50/argocd-example-apps.git    # Git repository URL containing your code
     targetRevision: HEAD          # The branch, tag, or commit to deploy
     path: blue-green        # Path to the directory in the repo
   destination:
